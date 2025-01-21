@@ -25,7 +25,7 @@ test('newNote inserts data and returns it', async () => {
   };
   
   insertDB.mockResolvedValue(data);
-
+  
   const result = await newNote(note, tags);
   expect(result.content).toEqual(data.content);
   expect(result.tags).toEqual(data.tags);

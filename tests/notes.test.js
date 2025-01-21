@@ -23,6 +23,7 @@ test('newNote inserts data and returns it', async () => {
     content: note,
     id: Date.now(),
   };
+  
   insertDB.mockResolvedValue(data);
 
   const result = await newNote(note, tags);

@@ -1,4 +1,4 @@
-import yargs from 'yargs'
+import yargs from 'yargs';
 import { hideBin } from 'yargs/helpers'
 import { newNote, findeNote, getAllNotes, removeAllNotes, removeNote } from './notes.js';
 

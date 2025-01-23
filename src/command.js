@@ -1,6 +1,6 @@
 import yargs from 'yargs'
 import { hideBin } from 'yargs/helpers'
-import { newNote, findeNote, getAllNotes, removeAllNotes, removeNote } from './notes.js'
+import { newNote, findeNote, getAllNotes, removeAllNotes, removeNote } from './notes.js';
 
 yargs(hideBin(process.argv))
   .command( "new <note>", "Create a new note", (yargs) => {
